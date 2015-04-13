@@ -39,12 +39,43 @@ public:
 
 	void does()
 	{
-		cout << "tweet tweet" << endl;
+		cout << "tweet tweet!" << endl;
+	}
+
+};
+
+class Dog :public Animal
+{
+public:
+	void name()
+	{
+		cout << "I am a dog" << endl;
+	}
+	void does()
+	{
+		cout << "Woof Woof!" << endl;
 	}
 
 };
 
 int main()
 {
+	Dog max;
+	Bird flappy;
+	Animal *A1 = &max;
+	Animal *A2 = &flappy;
+	Animal *A3;
+
+	A1->name();							//Polymorphic Behavior
+	A1->does();
+
+	A2->name();
+	A2->does();
+
+	A3->name();
+	A3->does();
+
+
+
 	return 0;
 }
