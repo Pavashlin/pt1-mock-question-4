@@ -15,12 +15,12 @@
 #include <iostream>
 using namespace std;
 
-class Animal
+class Animal													//virtual base class
 {
 public:
 	virtual void name()
 	{
-		cout << "I am an Animal" << endl;
+		cout << "I am an Animal" << endl;						//default responses
 	}
 
 	virtual void does()
@@ -29,3 +29,22 @@ public:
 	}
 };
 
+class Bird :public Animal
+{
+public:
+	void name()
+	{
+		cout << "I am a bird" << endl;
+	}
+
+	void does()
+	{
+		cout << "tweet tweet" << endl;
+	}
+
+};
+
+int main()
+{
+	return 0;
+}
