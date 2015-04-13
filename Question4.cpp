@@ -62,9 +62,11 @@ int main()
 {
 	Dog max;
 	Bird flappy;
+	Animal brick;
+
 	Animal *A1 = &max;
 	Animal *A2 = &flappy;
-	Animal *A3;
+	Animal *A3 = &brick;
 
 	A1->name();							//Polymorphic Behavior
 	A1->does();
