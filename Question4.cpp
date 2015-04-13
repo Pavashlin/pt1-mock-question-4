@@ -11,3 +11,21 @@
 // 4.2 From class "Animal", derive a concrete class "Bird" and "Dog".  Print appropriate message for
 //     each method.
 // 4.3 Write a driver program which creates an object of each type and demonstrates POLYMORPHISM. 
+
+#include <iostream>
+using namespace std;
+
+class Animal
+{
+public:
+	virtual void name()
+	{
+		cout << "I am an Animal" << endl;
+	}
+
+	virtual void does()
+	{
+		cout << "Eat, Sleep, Poop, Repeat " << endl;
+	}
+};
+
